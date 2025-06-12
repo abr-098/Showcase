@@ -56,96 +56,90 @@ A sophisticated cloud infrastructure management platform that leverages AI to au
 
 ## 1. System Overview Diagram
 
-```┌────────────────────────────────────────────────────────────────────────────────────────┐
-│                            AI-Powered Configuration Flow                               │
-└────────────────────────────────────────────────────────────────────────────────────────┘
+```
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                        AI-Powered VM Creator Platform                           │
+│                           System Architecture                                   │
+└─────────────────────────────────────────────────────────────────────────────────┘
 
-User Input: "I need a Python Django development server with PostgreSQL and Redis"
-
-                                         │
-                                         ▼
-                             ┌────────────────────────────┐
-                             │        Input Analysis       │
-                             │                            │
-                             │ • Tokenization             │
-                             │ • Entity Extraction        │
-                             │ • Intent Detection         │
-                             │ • Context Building         │
-                             └────────────────────────────┘
-                                         │
-                                         ▼
-        ┌────────────────────────┐   ┌────────────────────────┐   ┌────────────────────────┐
-        │     OpenAI API         │──▶│      Custom Model       │──▶│      Fine-tuning        │
-        │                        │   │                        │   │                        │
-        │ • GPT-4 Engine         │   │ • VM Configuration     │   │ • Domain Knowledge     │
-        │ • Contextual Reasoning │   │ • Resource Optimization│   │ • Continuous Learning  │
-        └────────────────────────┘   └────────────────────────┘   └────────────────────────┘
-                                         │
-                                         ▼
-                             ┌────────────────────────────┐
-                             │       Config Analysis       │
-                             │                            │
-                             │ Keywords Identified:       │
-                             │ • "Python"                 │
-                             │ • "Django"                 │
-                             │ • "PostgreSQL"             │
-                             │ • "Redis"                  │
-                             │ • "development"            │
-                             └────────────────────────────┘
-                                         │
-                                         ▼
-                             ┌────────────────────────────┐
-                             │       AI Decision Engine     │
-                             │                            │
-                             │ Reasoning:                 │
-                             │ • Web Framework Detected   │
-                             │ • Database Required        │
-                             │ • Caching Required         │
-                             │ • Dev Environment Preferred│
-                             └────────────────────────────┘
-                                         │
-                                         ▼
-                             ┌────────────────────────────────────────────────────────────┐
-                             │                  Generated Configuration                   │
-                             │                                                            │
-                             │ {                                                          │
-                             │   "instance_type":        "e2-standard-2",                 │
-                             │   "os_image":             "ubuntu-20.04",                  │
-                             │   "region":               "us-central1",                   │
-                             │   "packages": [                                             │
-                             │     "python3",                                              │
-                             │     "django",                                               │
-                             │     "postgresql",                                           │
-                             │     "redis"                                                 │
-                             │   ],                                                       │
-                             │   "firewall_rules": [                                       │
-                             │     { "port": 8000, "protocol": "tcp", "allow": true },     │
-                             │     { "port": 5432, "protocol": "tcp", "allow": true },     │
-                             │     { "port": 6379, "protocol": "tcp", "allow": true }      │
-                             │   ],                                                       │
-                             │   "environment_variables": {                                │
-                             │     "DJANGO_ENV":    "development",                         │
-                             │     "DB_NAME":       "app_db",                              │
-                             │     "REDIS_HOST":    "localhost",                           │
-                             │     "DEBUG":         "true"                                 │
-                             │   },                                                       │
-                             │   "disk_size_gb":           20,                             │
-                             │   "auto_shutdown":          true,                           │
-                             │   "admin_user":             "developer",                    │
-                             │   "duration":               "2h"                            │
-                             │ }                                                          │
-                             └────────────────────────────────────────────────────────────┘
-                                         │
-                                         ▼
-                             ┌────────────────────────────┐
-                             │     User Review & Approval  │
-                             │                            │
-                             │ • Display Configuration    │
-                             │ • Estimate Costs           │
-                             │ • Allow Modifications      │
-                             │ • Final Confirmation       │
-                             └────────────────────────────┘
-
+┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
+│   User Layer    │    │  External APIs  │    │  Admin Layer    │
+│                 │    │                 │    │                 │
+│ • Web Browser   │    │ • OpenAI GPT    │    │ • Admin Panel   │
+│ • Mobile Client │    │ • Google Cloud  │    │ • Monitoring    │
+│ • REST Client   │    │ • Terraform     │    │ • Logs          │
+└─────────────────┘    └─────────────────┘    └─────────────────┘
+         │                       │                       │
+         │                       │                       │
+         └───────────────────────┼───────────────────────┘
+                                 │
+                                 ▼
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                            Application Layer                                    │
+│                                                                                 │
+│  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐                  │
+│  │  Web Framework  │  │  Authentication │  │  API Gateway    │                  │
+│  │                 │  │                 │  │                 │                  │
+│  │ • Flask Router  │  │ • Session Mgmt  │  │ • Rate Limiting │                  │
+│  │ • URL Routing   │  │ • User Auth     │  │ • Request Valid │                  │
+│  │ • Middleware    │  │ • Permissions   │  │ • Response Form │                  │
+│  └─────────────────┘  └─────────────────┘  └─────────────────┘                  │
+│                                                                                 │
+│  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐                  │
+│  │  AI Integration │  │  VM Management  │  │  Task Manager   │                  │
+│  │                 │  │                 │  │                 │                  │
+│  │ • OpenAI Client │  │ • VM Lifecycle  │  │ • Celery Queue  │                  │
+│  │ • Config Gen    │  │ • Status Track  │  │ • Job Scheduler │                  │
+│  │ • Fine-tuning   │  │ • CRUD Ops      │  │ • Worker Pool   │                  │
+│  └─────────────────┘  └─────────────────┘  └─────────────────┘                  │
+│                                                                                 │
+└─────────────────────────────────────────────────────────────────────────────────┘
+                                 │
+                                 ▼
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                           Infrastructure Layer                                  │
+│                                                                                 │
+│  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐                  │
+│  │  Terraform      │  │  Background     │  │  Security       │                  │
+│  │  Engine         │  │  Processing     │  │  Services       │                  │
+│  │                 │  │                 │  │                 │                  │
+│  │ • IaC Execution │  │ • Async Tasks   │  │ • SSH Key Mgmt  │                  │
+│  │ • State Mgmt    │  │ • Job Queue     │  │ • Firewall Auto │                  │
+│  │ • Resource Prov │  │ • Error Handle  │  │ • Access Control│                  │
+│  └─────────────────┘  └─────────────────┘  └─────────────────┘                  │
+│                                                                                 │
+└─────────────────────────────────────────────────────────────────────────────────┘
+                                 │
+                                 ▼
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                              Data Layer                                        │
+│                                                                                 │
+│  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐                  │
+│  │  PostgreSQL     │  │  Redis Cache    │  │  File Storage   │                  │
+│  │  Database       │  │                 │  │                 │                  │
+│  │                 │  │ • Sessions      │  │ • Config Files  │                  │
+│  │ • VM Registry   │  │ • Task Results  │  │ • SSH Keys      │                  │
+│  │ • User Data     │  │ • Temp Data     │  │ • Logs          │                  │
+│  │ • Audit Logs    │  │ • Cache         │  │ • Backups       │                  │
+│  └─────────────────┘  └─────────────────┘  └─────────────────┘                  │
+│                                                                                 │
+└─────────────────────────────────────────────────────────────────────────────────┘
+                                 │
+                                 ▼
+┌─────────────────────────────────────────────────────────────────────────────────┐
+│                           Cloud Infrastructure                                 │
+│                                                                                 │
+│  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐                  │
+│  │  Google Cloud   │  │  Multi-Region   │  │  Load Balancing │                  │
+│  │  Platform       │  │  Deployment     │  │                 │                  │
+│  │                 │  │                 │  │ • Region Select │                  │
+│  │ • Compute Engine│  │ • us-west1      │  │ • Resource Opt  │                  │
+│  │ • Networking    │  │ • us-east1      │  │ • Auto Failover │                  │
+│  │ • Security      │  │ • europe-west2  │  │ • Cost Optimize │                  │
+│  │ • Storage       │  │ • asia-south2   │  │                 │                  │
+│  └─────────────────┘  └─────────────────┘  └─────────────────┘                  │
+│                                                                                 │
+└─────────────────────────────────────────────────────────────────────────────────┘
 ```
 
 ## 2. AI Processing Flow Diagram
