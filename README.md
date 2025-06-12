@@ -145,86 +145,95 @@ A sophisticated cloud infrastructure management platform that leverages AI to au
 ## 2. AI Processing Flow Diagram
 
 ```
-┌─────────────────────────────────────────────────────────────────────────────────┐
-│                        AI-Powered Configuration Flow                            │
-└─────────────────────────────────────────────────────────────────────────────────┘
+┌────────────────────────────────────────────────────────────────────────────────────────┐
+│                            AI-Powered Configuration Flow                               │
+└────────────────────────────────────────────────────────────────────────────────────────┘
 
 User Input: "I need a Python Django development server with PostgreSQL and Redis"
 
-         │
-         ▼
-┌─────────────────┐
-│  Input Analysis │
-│                 │
-│ • Tokenization  │
-│ • Entity Extract│
-│ • Intent Detect │
-│ • Context Build │
-└─────────────────┘
-         │
-         ▼
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   OpenAI API    │────│  Custom Model   │────│   Fine-tuning   │
-│                 │    │                 │    │                 │
-│ • GPT-4 Model   │    │ • VM Config     │    │ • Domain Data   │
-│ • NLP Engine    │    │ • Optimization  │    │ • Learning      │
-│ • Context AI    │    │ • Best Practice │    │ • Improvement   │
-└─────────────────┘    └─────────────────┘    └─────────────────┘
-         │
-         ▼
-┌─────────────────┐
-│ Config Analysis │
-│                 │
-│ Keywords Found: │
-│ • "Python"      │
-│ • "Django"      │
-│ • "PostgreSQL"  │
-│ • "Redis"       │
-│ • "development" │
-└─────────────────┘
-         │
-         ▼
-┌─────────────────┐
-│ AI Decision     │
-│ Engine          │
-│                 │
-│ Reasoning:      │
-│ • Web framework │
-│ • Database need │
-│ • Cache require │
-│ • Dev environ   │
-└─────────────────┘
-         │
-         ▼
-┌─────────────────┐
-│ Generated       │
-│ Configuration   │
-│                 │
-│ {               │
-│  "instance_type"│
-│   "e2-standard-2│
-│  "os_image":    │
-│   "ubuntu-20.04"│
-│  "packages": [  │
-│   "python3",    │
-│   "django",     │
-│   "postgresql", │
-│   "redis"       │
-│  ],             │
-│  "duration":"2h"│
-│ }               │
-└─────────────────┘
-         │
-         ▼
-┌─────────────────┐
-│ User Review &   │
-│ Confirmation    │
-│                 │
-│ • Config Display│
-│ • Cost Estimate │
-│ • Modify Option │
-│ • Final Approve │
-└─────────────────┘
+                                         │
+                                         ▼
+                             ┌────────────────────────────┐
+                             │        Input Analysis       │
+                             │                            │
+                             │ • Tokenization             │
+                             │ • Entity Extraction        │
+                             │ • Intent Detection         │
+                             │ • Context Building         │
+                             └────────────────────────────┘
+                                         │
+                                         ▼
+        ┌────────────────────────┐   ┌────────────────────────┐   ┌────────────────────────┐
+        │     OpenAI API         │──▶│      Custom Model       │──▶│      Fine-tuning        │
+        │                        │   │                        │   │                        │
+        │ • GPT-4 Engine         │   │ • VM Configuration     │   │ • Domain Knowledge     │
+        │ • Contextual Reasoning │   │ • Resource Optimization│   │ • Continuous Learning  │
+        └────────────────────────┘   └────────────────────────┘   └────────────────────────┘
+                                         │
+                                         ▼
+                             ┌────────────────────────────┐
+                             │       Config Analysis       │
+                             │                            │
+                             │ Keywords Identified:       │
+                             │ • "Python"                 │
+                             │ • "Django"                 │
+                             │ • "PostgreSQL"             │
+                             │ • "Redis"                  │
+                             │ • "development"            │
+                             └────────────────────────────┘
+                                         │
+                                         ▼
+                             ┌────────────────────────────┐
+                             │       AI Decision Engine     │
+                             │                            │
+                             │ Reasoning:                 │
+                             │ • Web Framework Detected   │
+                             │ • Database Required        │
+                             │ • Caching Required         │
+                             │ • Dev Environment Preferred│
+                             └────────────────────────────┘
+                                         │
+                                         ▼
+                             ┌────────────────────────────────────────────────────────────┐
+                             │                  Generated Configuration                   │
+                             │                                                            │
+                             │ {                                                          │
+                             │   "instance_type":        "e2-standard-2",                 │
+                             │   "os_image":             "ubuntu-20.04",                  │
+                             │   "region":               "us-central1",                   │
+                             │   "packages": [                                             │
+                             │     "python3",                                              │
+                             │     "django",                                               │
+                             │     "postgresql",                                           │
+                             │     "redis"                                                 │
+                             │   ],                                                       │
+                             │   "firewall_rules": [                                       │
+                             │     { "port": 8000, "protocol": "tcp", "allow": true },     │
+                             │     { "port": 5432, "protocol": "tcp", "allow": true },     │
+                             │     { "port": 6379, "protocol": "tcp", "allow": true }      │
+                             │   ],                                                       │
+                             │   "environment_variables": {                                │
+                             │     "DJANGO_ENV":    "development",                         │
+                             │     "DB_NAME":       "app_db",                              │
+                             │     "REDIS_HOST":    "localhost",                           │
+                             │     "DEBUG":         "true"                                 │
+                             │   },                                                       │
+                             │   "disk_size_gb":           20,                             │
+                             │   "auto_shutdown":          true,                           │
+                             │   "admin_user":             "developer",                    │
+                             │   "duration":               "2h"                            │
+                             │ }                                                          │
+                             └────────────────────────────────────────────────────────────┘
+                                         │
+                                         ▼
+                             ┌────────────────────────────┐
+                             │     User Review & Approval  │
+                             │                            │
+                             │ • Display Configuration    │
+                             │ • Estimate Costs           │
+                             │ • Allow Modifications      │
+                             │ • Final Confirmation       │
+                             └────────────────────────────┘
 ```
 
 ## 3. Multi-Region Deployment Architecture
