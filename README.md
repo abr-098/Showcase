@@ -112,7 +112,7 @@ A sophisticated cloud infrastructure management platform that leverages AI to au
                                  │
                                  ▼
 ┌─────────────────────────────────────────────────────────────────────────────────┐
-│                              Data Layer                                        │
+│                              Data Layer                                         │
 │                                                                                 │
 │  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐                  │
 │  │  PostgreSQL     │  │  Redis Cache    │  │  File Storage   │                  │
@@ -127,7 +127,7 @@ A sophisticated cloud infrastructure management platform that leverages AI to au
                                  │
                                  ▼
 ┌─────────────────────────────────────────────────────────────────────────────────┐
-│                           Cloud Infrastructure                                 │
+│                           Cloud Infrastructure                                  │
 │                                                                                 │
 │  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐                  │
 │  │  Google Cloud   │  │  Multi-Region   │  │  Load Balancing │                  │
@@ -335,12 +335,12 @@ Connection Pool Configuration:
 
 Redis Cache Structure:
 ┌─────────────────────────────────────────────────────────────────────────────────┐
-│                               Redis Cache                                      │
+│                               Redis Cache                                       │
 │                                                                                 │
-│  flask_session:*     → User session data                                       │
-│  celery-task-meta:*  → Celery task results                                     │
-│  vm_status:*         → VM deployment status                                    │
-│  user_cache:*        → Temporary user data                                     │
+│  flask_session:*     → User session data                                        │
+│  celery-task-meta:*  → Celery task results                                      │
+│  vm_status:*         → VM deployment status                                     │
+│  user_cache:*        → Temporary user data                                      │
 │                                                                                 │
 │  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐                  │
 │  │  Session Store  │  │  Task Results   │  │  Cache Layer    │                  │
@@ -373,7 +373,7 @@ Redis Cache Structure:
                                  │
                                  ▼
 ┌─────────────────────────────────────────────────────────────────────────────────┐
-│                            Security Layers                                     │
+│                            Security Layers                                      │
 │                                                                                 │
 │  ┌─────────────────┐  ┌─────────────────┐  ┌─────────────────┐                  │
 │  │  Network Sec    │  │  Application    │  │  Data Security  │                  │
@@ -395,9 +395,9 @@ Redis Cache Structure:
 
 VM Security Configuration:
 ┌─────────────────────────────────────────────────────────────────────────────────┐
-│                           Automated VM Security                                │
+│                           Automated VM Security                                 │
 │                                                                                 │
-│  Linux VMs:                              Windows VMs:                          │
+│  Linux VMs:                              Windows VMs:                           │
 │  ┌─────────────────┐                     ┌─────────────────┐                    │
 │  │ • SSH Key Auth  │                     │ • RDP Access    │                    │
 │  │ • Firewall Auto │                     │ • Admin User    │                    │
@@ -408,11 +408,11 @@ VM Security Configuration:
 │                                                                                 │
 │  Terraform Security:                                                            │
 │  ┌─────────────────────────────────────────────────────────────────────────────┤
-│  │ • Network isolation per VM                                                 │
-│  │ • Automatic security group creation                                        │
-│  │ • Least privilege access                                                   │
-│  │ • Infrastructure state encryption                                          │
-│  │ • Resource tagging for audit                                               │
+│  │ • Network isolation per VM                                                  │
+│  │ • Automatic security group creation                                         │
+│  │ • Least privilege access                                                    │
+│  │ • Infrastructure state encryption                                           │
+│  │ • Resource tagging for audit                                                │
 │  └─────────────────────────────────────────────────────────────────────────────┤
 │                                                                                 │
 └─────────────────────────────────────────────────────────────────────────────────┘
