@@ -6,7 +6,7 @@ A sophisticated cloud infrastructure management platform that leverages AI to au
 ## 🚀 Key Features
 
 - **AI-Powered VM Configuration**
-  - Natural language processing for VM requirements
+  - Natural language processing for VM requirements via Fine Tuned Model
   - Intelligent resource allocation suggestions
   - Automated configuration generation
 
@@ -32,7 +32,7 @@ A sophisticated cloud infrastructure management platform that leverages AI to au
 
 ### Backend
 - **Framework:** Flask (Python)
-- **AI Integration:** OpenAI API
+- **AI Integration:** OpenAI API with a Fine-Tuned Model
 - **Infrastructure:** Terraform, Google Cloud Platform
 - **Database:** PostgreSQL
 - **Caching:** Redis
@@ -65,7 +65,7 @@ A sophisticated cloud infrastructure management platform that leverages AI to au
 ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
 │   User Layer    │    │  External APIs  │    │  Admin Layer    │
 │                 │    │                 │    │                 │
-│ • Web Browser   │    │ • OpenAI GPT    │    │ • Admin Panel   │
+│ • Web Browser   │    │ • OpenAI GPT-FTM│    │ • Admin Panel   │
 │ • Mobile Client │    │ • Google Cloud  │    │ • Monitoring    │
 │ • REST Client   │    │ • Terraform     │    │ • Logs          │
 └─────────────────┘    └─────────────────┘    └─────────────────┘
@@ -428,7 +428,7 @@ These diagrams showcase:
 ## 🏆 Key Technical Achievements
 
 ### 1. **AI-Driven Infrastructure Intelligence**
-- **Natural Language Processing**: OpenAI GPT models interpret complex infrastructure requirements
+- **Natural Language Processing**: OpenAI GPT models interpret complex infrastructure requirements with datasets provided for fine-tuning
 - **Intelligent Resource Optimization**: AI determines optimal VM configurations, reducing costs by 30%
 - **Custom Fine-tuning**: Domain-specific model training for VM configuration expertise
 - **Predictive Analytics**: Cost estimation and performance optimization
