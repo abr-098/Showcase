@@ -1,13 +1,15 @@
 # AI-Powered DevOps Co-Pilot for Large-Scale Server Maintenance
 
-This project showcases a sophisticated, multi-faceted system that combines Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and direct CI/CD integration to create a powerful AI Co-Pilot for DevOps and SRE teams. The system is designed to intelligently manage and maintain a fleet of up to 2000 servers, demonstrating a modern approach to automating platform engineering tasks.
+This project showcases a sophisticated, multi-faceted system that combines Large Language Models (LLMs), Retrieval-Augmented Generation (RAG), and direct CI/CD integration to create a powerful AI Co-Pilot for DevOps and SRE teams. The system is designed to intelligently manage and maintain a fleet of servers, demonstrating a modern approach to automating platform engineering tasks.
 
 ## Core Components
 
 The repository is divided into two main projects that work in concert:
 
-1.  **LangChain/LangGraph Maintenance Orchestrator (Python):** A powerful AI agent that acts as the "brain" of the operation. It uses a multi-agent architecture to diagnose server issues, propose solutions, and generate maintenance scripts.
-2.  **Jenkins MCP Server (TypeScript):** A secure bridge that exposes Jenkins functionalities as tools for the AI agent, enabling it to perform real-world actions like running Ansible playbooks and managing build jobs.
+1.  **LangChain/LangGraph Maintenance Orchestrator (Python):
+            ** A powerful AI agent that acts as the "brain" of the operation. It uses a multi-agent architecture to diagnose server issues, propose solutions, and generate maintenance scripts.
+2.  **Jenkins MCP Server (TypeScript):
+            ** A secure bridge that exposes Jenkins functionalities as tools for the AI agent, enabling it to perform real-world actions like running Ansible playbooks and managing build jobs.
 
 ---
 
