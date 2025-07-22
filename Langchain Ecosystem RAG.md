@@ -130,15 +130,3 @@ This component is a Node.js server that implements the **Model Context Protocol 
     ```
 
 ---
-
-## Attracting Recruiters
-
-This project is a strong portfolio piece that demonstrates expertise in several high-demand areas:
-
--   **Applied AI & LLMs:** Deep, practical knowledge of LangChain, LangGraph, RAG, and agentic workflows.
--   **DevOps & Automation:** Understanding of CI/CD pipelines (Jenkins), infrastructure as code (Ansible), and server maintenance challenges.
--   **Platform Engineering:** Building tools and systems that improve developer and operator productivity at scale.
--   **Full-Stack Development:** Proficiency in both Python and TypeScript/Node.js ecosystems.
--   **System Architecture:** Designing complex, multi-component systems with a focus on security, scalability, and reliability.
-
-By showcasing this project, you can effectively demonstrate your ability to bridge the gap between modern AI capabilities and practical, real-world engineering problems.
