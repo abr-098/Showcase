@@ -1,5 +1,8 @@
 # Jenkins Server MCP
 
+
+I have created an extended MCP with much better tools for Infra Automation (vide-coding)
+
 A Model Context Protocol (MCP) server that provides tools for interacting with Jenkins CI/CD servers. This server enables AI assistants to check build statuses, trigger builds, retrieve build logs, and execute Ansible ad-hoc commands through a standardized interface.
 
 ## Installation
